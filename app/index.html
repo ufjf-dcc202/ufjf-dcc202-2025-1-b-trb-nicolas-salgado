@@ -8,8 +8,17 @@
   </head>
   <body>
     <div id="canteiro"></div>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <button id="dormir">DORMIR</button>
-    <img src="../graphical-assets/vendedor/vendedor-idle.png" id="vendedor" />
+    <img src="../graphical-assets/vendedor/vendedor-idle.png" id="vendedor">
+
+    <div id="loja" class="popup">
+      <span class="fechar">X</span>
+      <h3>Loja</h3>
+      <p>Ouro: <span id="ouro">20</span></p>
+      <button onclick="comprar('cenoura')">Cenoura - 5</button>
+      <button onclick="comprar('tomate')">Tomate - 5</button>
+      <button onclick="comprar('trigo')">Trigo - 5</button>
+    </div>
   </body>
 </html>
