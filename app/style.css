@@ -2,9 +2,16 @@
   display: grid;
   grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
   grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  float: left;
 }
 
 .quadrado {
   border: 1px solid black;
   background-image: url("../graphical-assets/grama-seca/grama-lisa-seca.png");
+}
+
+#dormir {
+  float: right;
+  font-size: 20px;
+  padding: 10px;
 }
