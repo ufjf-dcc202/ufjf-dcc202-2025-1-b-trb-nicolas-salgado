@@ -7,6 +7,17 @@ for (let i = 0; i < 12; i++) {
   for (let j = 0; j < 12; j++) {
     const q = document.createElement("div");
     q.className = "quadrado";
+    // setta primeira grama como relevo ou flor (mais ou menos 50% de chance de cada)
+    q.style.backgroundImage =
+      "url(../graphical-assets/grama-seca/" +
+      (Math.random() < 0.5 ? "grama-relevo-seca.png" : "grama-flor-seca.png") +
+      ")";
+
+    //clica na grama muda para lisa
+    q.onclick = function () {
+      this.style.backgroundImage =
+        "url(../graphical-assets/grama-seca/grama-lisa-seca.png)";
+    };
     c.appendChild(q);
   }
 }
