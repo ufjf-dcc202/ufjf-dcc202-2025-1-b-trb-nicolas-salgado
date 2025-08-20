@@ -28,6 +28,8 @@ document.querySelector("#creditos-popup .fechar").onclick = function () {
 };
 
 document.getElementById("dormir").onclick = function () {
+  const som = new Audio("../audio/som-de-dormir.ogg");
+  som.play();
   const quadrados = document.querySelectorAll(".quadrado");
   quadrados.forEach((q) => {
     if (q.planta) {
