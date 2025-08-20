@@ -1,8 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
 #canteiro {
   display: grid;
   grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
   grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
-  float: left;
 }
 
 .quadrado {
@@ -11,6 +18,8 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
 
 #dormir {
   float: right;
@@ -22,7 +31,6 @@
   float: left;
   text-align: center;
 }
-
 
 #vendedor {
   height: 200px;
