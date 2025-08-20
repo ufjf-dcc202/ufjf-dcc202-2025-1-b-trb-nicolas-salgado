@@ -49,6 +49,8 @@ function colherPlanta(quadrado) {
   document.getElementById("ouro").textContent = ouro;
   document.getElementById("ouro2").textContent = ouro;
   limparQuadrado(quadrado);
+  const som = new Audio("../audio/colher-planta.ogg");
+  som.play();
 }
 
 function limparQuadrado(quadrado) {
