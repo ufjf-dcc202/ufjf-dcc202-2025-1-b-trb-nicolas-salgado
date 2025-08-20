@@ -28,6 +28,12 @@
   height: 48px;
 }
 
+#balde {
+  float: left;
+  margin-left: 10px;
+  height: 48px;
+}
+
 #cursor-pa {
   position: fixed;
   pointer-events: none;
