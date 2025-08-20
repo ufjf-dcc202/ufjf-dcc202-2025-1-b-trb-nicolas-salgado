@@ -23,6 +23,13 @@ function comprar(tipo) {
   if (ouro >= 5) {
     ouro -= 5;
     document.getElementById("ouro").textContent = ouro;
+    document.getElementById("ouro2").textContent = ouro;
+    document.getElementById("itens").innerHTML +=
+      ' <img src="../graphical-assets/plantas/' +
+      tipo +
+      "/" +
+      tipo +
+      '-muda.png" height="24">';
   }
 }
 
