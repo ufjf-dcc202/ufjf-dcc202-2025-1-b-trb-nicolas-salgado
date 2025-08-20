@@ -1,4 +1,5 @@
 const c = document.getElementById("canteiro");
+let usandoPa = false;
 
 // faz o canteiro 12x12
 // loop das linhas
@@ -13,10 +14,18 @@ for (let i = 0; i < 12; i++) {
       (Math.random() < 0.5 ? "grama-relevo-seca.png" : "grama-flor-seca.png") +
       ")";
 
-    //clica na grama muda para lisa
+    q.liso = false;
+    //clica: precisa da pá; primeiro deixa liso, depois prepara
     q.onclick = function () {
-      this.style.backgroundImage =
-        "url(../graphical-assets/grama-seca/grama-lisa-seca.png)";
+      if (!usandoPa) return;
+      if (!this.liso) {
+        this.style.backgroundImage =
+          "url(../graphical-assets/grama-seca/grama-lisa-seca.png)";
+        this.liso = true;
+      } else {
+        this.style.backgroundImage =
+          "url(../graphical-assets/grama-preparada/grama-preparada.png)";
+      }
     };
     c.appendChild(q);
   }
@@ -25,6 +34,11 @@ for (let i = 0; i < 12; i++) {
 // abre loja
 document.getElementById("vendedor").onclick = function () {
   document.getElementById("loja").style.display = "block";
+};
+
+document.getElementById("pa").onclick = function () {
+  usandoPa = true;
+  document.body.style.cursor = "url(../graphical-assets/pa/pa.png), auto";
 };
 
 let ouro = 20;

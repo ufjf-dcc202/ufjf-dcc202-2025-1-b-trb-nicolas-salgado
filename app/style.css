@@ -20,6 +20,19 @@
   float: left;
 }
 
+#pa {
+  float: left;
+  margin-left: 10px;
+  height: 48px;
+}
+
+#cursor-pa {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+}
+
 .popup {
   display: none;
   position: fixed;
