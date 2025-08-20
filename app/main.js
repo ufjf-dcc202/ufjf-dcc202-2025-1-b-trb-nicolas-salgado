@@ -1,12 +1,11 @@
-var c = document.getElementById("canteiro");
-var ouro = 20;
+const c = document.getElementById("canteiro");
 
 // faz o canteiro 12x12
 // loop das linhas
-for (var i = 0; i < 12; i++) {
+for (let i = 0; i < 12; i++) {
   // loop das colunas
-  for (var j = 0; j < 12; j++) {
-    var q = document.createElement("div");
+  for (let j = 0; j < 12; j++) {
+    const q = document.createElement("div");
     q.className = "quadrado";
     c.appendChild(q);
   }
@@ -16,6 +15,8 @@ for (var i = 0; i < 12; i++) {
 document.getElementById("vendedor").onclick = function () {
   document.getElementById("loja").style.display = "block";
 };
+
+let ouro = 20;
 
 // compra muda
 function comprar(tipo) {
