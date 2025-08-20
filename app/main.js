@@ -19,6 +19,14 @@ function desativarFerramentas() {
     .forEach((m) => m.classList.remove("selecionada"));
 }
 
+document.getElementById("creditos-btn").onclick = function () {
+  document.getElementById("creditos-popup").style.display = "block";
+};
+
+document.querySelector("#creditos-popup .fechar").onclick = function () {
+  document.getElementById("creditos-popup").style.display = "none";
+};
+
 document.getElementById("dormir").onclick = function () {
   const quadrados = document.querySelectorAll(".quadrado");
   quadrados.forEach((q) => {

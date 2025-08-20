@@ -9,6 +9,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#creditos-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
 #ui-container {
   position: fixed;
   bottom: 20px;
@@ -55,7 +62,8 @@ body {
   border-radius: 4px;
 }
 
-#dormir {
+#dormir,
+#creditos-btn {
   font-size: 20px;
   padding: 15px;
   border: 2px solid #543a24;
