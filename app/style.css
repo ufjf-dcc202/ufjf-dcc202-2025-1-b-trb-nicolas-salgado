@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   gap: 20px;
+  font-family: "Inter", sans-serif;
 }
 
 #ui-container {
@@ -31,7 +34,6 @@ body {
   padding: 15px;
   width: 200px;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #inventario h3 {
@@ -78,8 +80,14 @@ body {
 }
 
 #vendedor-container {
-  float: left;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
   text-align: center;
+  border: 2px solid #543a24;
+  background-color: #f5deb3;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 #vendedor {
@@ -125,5 +133,9 @@ body {
 
 .muda-inventario.selecionada {
   border-color: #ffd700;
-  box-shadow: 0 0 5px #ffd700;
+}
+
+.ouro-text {
+  color: #8b4513;
+  font-weight: bold;
 }
