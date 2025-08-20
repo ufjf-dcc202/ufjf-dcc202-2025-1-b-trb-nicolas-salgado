@@ -7,7 +7,9 @@
 
 .quadrado {
   border: 1px solid black;
-  background-image: url("../graphical-assets/grama-seca/grama-lisa-seca.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #dormir {
@@ -49,4 +51,14 @@
   font-size: 40px;
   font-weight: bold;
   color: red;
+}
+
+.muda-inventario {
+  cursor: pointer;
+  margin: 2px;
+  border: 2px solid transparent;
+}
+
+.muda-inventario.selecionada {
+  background-color: lightblue;
 }
