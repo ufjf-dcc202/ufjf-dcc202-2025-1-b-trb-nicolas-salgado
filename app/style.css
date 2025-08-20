@@ -18,8 +18,14 @@
   padding: 10px;
 }
 
-#vendedor {
+#vendedor-container {
   float: left;
+  text-align: center;
+}
+
+
+#vendedor {
+  height: 200px;
 }
 
 #pa {
