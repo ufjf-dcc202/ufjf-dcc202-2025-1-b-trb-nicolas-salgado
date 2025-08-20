@@ -18,3 +18,23 @@ function desativarFerramentas() {
     .querySelectorAll(".muda-inventario.selecionada")
     .forEach((m) => m.classList.remove("selecionada"));
 }
+
+document.getElementById("dormir").onclick = function () {
+  const quadrados = document.querySelectorAll(".quadrado");
+  quadrados.forEach((q) => {
+    if (q.planta) {
+      if (q.molhado) {
+        avancarEstagio(q);
+      } else {
+        matarPlanta(q);
+      }
+      q.molhado = false; // A terra sempre seca no dia seguinte
+      if (q.planta.estagio !== "morto") {
+        q.style.backgroundImage = q.style.backgroundImage.replace(
+          "grama-preparada-molhada.png",
+          "grama-preparada.png"
+        );
+      }
+    }
+  });
+};

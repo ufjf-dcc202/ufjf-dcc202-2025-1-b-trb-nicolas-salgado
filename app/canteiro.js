@@ -24,11 +24,20 @@ function inicializarCanteiro() {
 
       //função que define o que vai acontecer com o quadrado quando clicar nele (se tiver uma muda selecionada, planta ela)
       q.onclick = function () {
+        if (usandoPa && this.planta && this.planta.estagio === "morto") {
+          limparQuadrado(this);
+          return;
+        }
         if (mudaSelecionada && this.preparado && !this.planta) {
           plantarMuda(this, mudaSelecionada);
           return;
         }
-        if (usandoBalde && this.planta && !this.molhado) {
+        if (
+          usandoBalde &&
+          this.planta &&
+          this.planta.estagio !== "morto" &&
+          !this.molhado
+        ) {
           this.style.backgroundImage = this.style.backgroundImage.replace(
             "grama-preparada.png",
             "grama-preparada-molhada.png"
