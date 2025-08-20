@@ -2,14 +2,8 @@
 
 // Seleciona uma muda do inventário
 function selecionarMuda(mudaElement) {
-  document
-    .querySelectorAll(".muda-inventario")
-    .forEach((m) => m.classList.remove("selecionada"));
   mudaElement.classList.add("selecionada");
   mudaSelecionada = mudaElement.dataset.tipo;
-  usandoPa = false;
-  usandoBalde = false;
-  document.body.style.cursor = "auto";
 }
 
 // Planta a muda no quadrado

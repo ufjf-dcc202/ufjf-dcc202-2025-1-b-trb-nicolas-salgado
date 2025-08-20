@@ -24,6 +24,7 @@ function comprar(tipo) {
     mudaImg.className = "muda-inventario";
     mudaImg.dataset.tipo = tipo;
     mudaImg.onclick = function () {
+      desativarFerramentas();
       selecionarMuda(this);
     };
 

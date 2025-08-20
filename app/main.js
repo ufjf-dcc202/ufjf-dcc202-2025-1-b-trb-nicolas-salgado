@@ -8,3 +8,13 @@ let usandoBalde = false;
 let mudaSelecionada = null;
 //setta quantidade de ouro por padrao
 let ouro = 20;
+
+function desativarFerramentas() {
+  usandoPa = false;
+  usandoBalde = false;
+  mudaSelecionada = null;
+  document.body.style.cursor = "auto";
+  document
+    .querySelectorAll(".muda-inventario.selecionada")
+    .forEach((m) => m.classList.remove("selecionada"));
+}
