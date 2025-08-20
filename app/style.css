@@ -6,6 +6,64 @@ body {
   gap: 20px;
 }
 
+#ui-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+#ferramentas-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #543a24;
+  padding-bottom: 10px;
+}
+
+#inventario {
+  border: 2px solid #543a24;
+  background-color: #f5deb3;
+  padding: 15px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#inventario h3 {
+  text-align: center;
+  color: #543a24;
+}
+
+#itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#itens img {
+  border: 1px solid #8b4513;
+  padding: 2px;
+  background-color: #fff8dc;
+  border-radius: 4px;
+}
+
+#dormir {
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid #543a24;
+  background-color: #f5deb3;
+  border-radius: 8px;
+  color: #543a24;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 #canteiro {
   display: grid;
   grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
@@ -19,14 +77,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
-#dormir {
-  float: right;
-  font-size: 20px;
-  padding: 10px;
-}
-
 #vendedor-container {
   float: left;
   text-align: center;
@@ -36,16 +86,10 @@ body {
   height: 200px;
 }
 
-#pa {
-  float: left;
-  margin-left: 10px;
-  height: 48px;
-}
-
+#pa,
 #balde {
-  float: left;
-  margin-left: 10px;
-  height: 48px;
+  height: 24px;
+  cursor: pointer;
 }
 
 #cursor-pa {
@@ -80,5 +124,6 @@ body {
 }
 
 .muda-inventario.selecionada {
-  background-color: lightblue;
+  border-color: #ffd700;
+  box-shadow: 0 0 5px #ffd700;
 }

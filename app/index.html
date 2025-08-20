@@ -16,16 +16,24 @@
   <script src="ferramentas.js" defer></script>
   <script src="canteiro.js" defer></script>
 
-  <button id="dormir">DORMIR</button>
-
   <div id="vendedor-container">
     <h4>VENDEDOR</h4>
     <img src="../graphical-assets/vendedor/vendedor-idle.png" id="vendedor">
   </div>
-  <img src="../graphical-assets/pa/pa.png" id="pa">
-  <img src="../graphical-assets/balde/balde-de-agua.png" id="balde">
 
-  <div id="inventario">Ouro: <span id="ouro2">20</span> <span id="itens"></span></div>
+  <div id="ui-container">
+    <button id="dormir">DORMIR</button>
+    <div id="inventario">
+      <div id="ferramentas-container">
+        <img src="../graphical-assets/pa/pa.png" id="pa">
+        <img src="../graphical-assets/balde/balde-de-agua.png" id="balde">
+      </div>
+      <h3>Inventário</h3>
+      <p>Ouro: <span id="ouro2">20</span></p>
+      <div id="itens"></div>
+    </div>
+  </div>
+
   <div id="loja" class="popup">
     <span class="fechar">X</span>
     <h3>Loja</h3>
