@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICEdew Valley</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="canteiro"></div>
-    <script src="main.js" defer></script>
-    <button id="dormir">DORMIR</button>
-    <img src="../graphical-assets/vendedor/vendedor-idle.png" id="vendedor">
 
-    <div id="loja" class="popup">
-      <span class="fechar">X</span>
-      <h3>Loja</h3>
-      <p>Ouro: <span id="ouro">20</span></p>
-      <button onclick="comprar('cenoura')">Cenoura - 5</button>
-      <button onclick="comprar('tomate')">Tomate - 5</button>
-      <button onclick="comprar('trigo')">Trigo - 5</button>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICEdew Valley</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="canteiro"></div>
+  <script src="main.js" defer></script>
+
+  <button id="dormir">DORMIR</button>
+
+  <img src="../graphical-assets/vendedor/vendedor-idle.png" id="vendedor">
+
+  <div id="loja" class="popup">
+    <span class="fechar">X</span>
+    <h3>Loja</h3>
+    <p>Ouro: <span id="ouro">20</span></p>
+
+    <button onclick="comprar('cenoura')">
+      <img src="../graphical-assets/plantas/cenoura/cenoura-muda.png" alt="muda-cenoura" height="24">
+      Cenoura - 5
+    </button>
+    <button onclick="comprar('tomate')">
+      <img src="../graphical-assets/plantas/tomate/tomate-muda.png" alt="muda-tomate" height="24">
+      Tomate - 5
+    </button>
+    <button onclick="comprar('trigo')">
+      <img src="../graphical-assets/plantas/trigo/trigo-muda.png" alt="muda-trigo" height="24">
+      Trigo - 5
+    </button>
+  </div>
+</body>
+
 </html>
