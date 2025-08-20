@@ -48,6 +48,8 @@ function inicializarCanteiro() {
             "grama-preparada-molhada.png"
           );
           this.molhado = true;
+          const som = new Audio("../audio/molhar-grama.ogg");
+          som.play();
           return;
         }
         if (!usandoPa) return;
