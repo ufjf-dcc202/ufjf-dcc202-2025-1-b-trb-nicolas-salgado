@@ -44,6 +44,13 @@ function matarPlanta(quadrado) {
   quadrado.style.backgroundImage = `url(${plantaMorta}), url(../graphical-assets/grama-preparada/grama-preparada.png)`;
 }
 
+function colherPlanta(quadrado) {
+  ouro += 10;
+  document.getElementById("ouro").textContent = ouro;
+  document.getElementById("ouro2").textContent = ouro;
+  limparQuadrado(quadrado);
+}
+
 function limparQuadrado(quadrado) {
   quadrado.liso = true;
   quadrado.preparado = false;

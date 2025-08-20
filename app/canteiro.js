@@ -24,6 +24,11 @@ function inicializarCanteiro() {
 
       //função que define o que vai acontecer com o quadrado quando clicar nele (se tiver uma muda selecionada, planta ela)
       q.onclick = function () {
+        if (this.planta && this.planta.estagio === "crescido") {
+          colherPlanta(this);
+          return;
+        }
+
         if (usandoPa && this.planta && this.planta.estagio === "morto") {
           limparQuadrado(this);
           return;
